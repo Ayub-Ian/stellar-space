@@ -1,0 +1,9 @@
+.home {
+    background: url("../../assets/space.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    padding-top:56px ;
+}
