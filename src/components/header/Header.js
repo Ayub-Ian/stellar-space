@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Map from "../AsteroidsMap/map";
 import "./Header.css";
 
 function Header() {
@@ -21,7 +22,7 @@ function Header() {
               <a href="/">Mars Weather</a>
             </li>
             <li>
-              <a href="/">Asteroids Map</a>
+              <NavLink to="/map">Asteroids Map</NavLink>
             </li>
             <li>
               <a href="/">Mars Rovers</a>
