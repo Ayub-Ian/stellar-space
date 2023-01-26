@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Map from "../AsteroidsMap/map";
 import "./Header.css";
 
 function Header() {
