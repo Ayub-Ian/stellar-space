@@ -24,10 +24,10 @@ function Header() {
               <NavLink to="/map">Asteroids Map</NavLink>
             </li>
             <li>
-              <a href="/">Mars Rovers</a>
+              <NavLink to="/mars-rovers-photos">Mars photos</NavLink>
             </li>
             <li>
-              <a href="/">NEO</a>
+            <NavLink to="/near-earth-objects">NEO</NavLink>
             </li>
           </ul>
         </div>
