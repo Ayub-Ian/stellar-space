@@ -28,7 +28,7 @@ function Header() {
               <a href="/">Mars Rovers</a>
             </li>
             <li>
-              <a href="/">NEO</a>
+            <NavLink to="/near-earth-objects">NEO</NavLink>
             </li>
           </ul>
         </div>

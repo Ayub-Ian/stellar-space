@@ -5,6 +5,7 @@ import HomePage from '../homepage/HomePage';
 import Map from '../AsteroidsMap/map';
 
 import './App.css';
+import NearEarthObjects from '../neo/NearEarthObjects';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<HomePage />} />
         <Route path='/map' element={<Map/>}/>
+        <Route path='/near-earth-objects' element={<NearEarthObjects/>}/>
         <Route />
       </Routes>
     </div>
