@@ -6,6 +6,7 @@ import Map from '../AsteroidsMap/map';
 
 import './App.css';
 import NearEarthObjects from '../neo/NearEarthObjects';
+import MarsRoversPhotos from '../mars-rovers-photos/MarsRoversPhotos';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path='/' element={<HomePage />} />
         <Route path='/map' element={<Map/>}/>
         <Route path='/near-earth-objects' element={<NearEarthObjects/>}/>
+        <Route path='/mars-rovers-photos' element={<MarsRoversPhotos />}/>
         <Route />
       </Routes>
     </div>

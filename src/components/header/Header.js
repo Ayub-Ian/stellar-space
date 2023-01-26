@@ -25,7 +25,7 @@ function Header() {
               <NavLink to="/map">Asteroids Map</NavLink>
             </li>
             <li>
-              <a href="/">Mars Rovers</a>
+              <NavLink to="/mars-rovers-photos">Mars photos</NavLink>
             </li>
             <li>
             <NavLink to="/near-earth-objects">NEO</NavLink>
