@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
-function NeoSearch() {
+function NeoSearch({ handleSearch }) {
 
   const [formData, setFormdata] = useState({
     start: "",
@@ -15,12 +15,8 @@ function NeoSearch() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(formData)
+    handleSearch(formData)
   }
-
-  useEffect(() => {
-    
-  }, [])
   
 
   return (
