@@ -42,21 +42,21 @@ function AboutMars(props) {
           <div className="Row">
             <h4 >ATMOSPHERIC TEMPERATURE</h4>
             {sol_hours.map(soul => (
-              <p key={soul}>{soul}</p>
+              <p key={soul}>{soul}°C</p>
             ))}
           </div>
 
           <div className="Row">
-          <h4>HORIZONTAL WIND PRESSURE</h4>
+          <h4>HORIZONTAL WIND SPEED</h4>
             {sol_hours.map(soul => (
-              <p key={soul}>{soul}</p>
+              <p key={soul}>{soul}Kph</p>
             ))}
           </div>
 
           <div className="Row">
         <h4>ATMOSPHERIC PRESSURE</h4>
             {sol_hours.map(soul => (
-              <p key={soul}>{soul}</p>
+              <p key={soul}>{soul}Hg</p>
             ))}
           </div>
 

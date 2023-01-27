@@ -1,9 +1,16 @@
 h2{
   text-align: center;
 }
+h4{
+  color: white;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
 div.Row{
 display: inline-block;
-
+background-color: rgb(134, 119, 119);
+border: 2px solid black;
 }
 p{
   text-align: center;
