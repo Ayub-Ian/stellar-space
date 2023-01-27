@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import '../weather/weather.css';
+import './weather.css';
 
 function AboutMars(props) {
   const [sol_hours, setSol_Hours] = useState([]);
@@ -36,9 +36,10 @@ function AboutMars(props) {
   );
 
   return (
-    
+  
+    <div className="mars-weather">
   <center>
-    <h2>Mars weather</h2>
+    <h2 className="weather-title">Mars weather</h2>
           <div className="Row">
             <h4 >ATMOSPHERIC TEMPERATURE</h4>
             {sol_hours.map(soul => (
@@ -68,6 +69,7 @@ function AboutMars(props) {
            </div>
     
   </center>
+  </div>
   );
 }
 
