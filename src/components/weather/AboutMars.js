@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
-
+import '../weather/weather.css';
 
 function AboutMars(props) {
   const [sol_hours, setSol_Hours] = useState([]);
   const [solRequired, setSol_Required] = useState([]);
   const [solChecked, setSol_Checked] = useState([]);
 
+
+  // fetching from api
   useEffect(
     () => {
       fetch(
@@ -34,34 +36,38 @@ function AboutMars(props) {
   );
 
   return (
-    <>
-
-     <div>
-        <h4 >ATMOSPHERIC TEMPERATURE</h4>
-        {sol_hours.map(soul => (
-          <p key={soul}>{soul}</p>
-        ))}
-      </div>
-      <div>
-      <h4>HORIZONTAL WIND PRESSURE</h4>
-        {sol_hours.map(soul => (
-          <p key={soul}>{soul}</p>
-        ))}
-      </div>
-      <div>
-    <h4>ATMOSPHERIC PRESSURE</h4>
-        {sol_hours.map(soul => (
-          <p key={soul}>{soul}</p>
-        ))}
-      </div>
-      <div>
-    <h4>WIND DIRECTION</h4>
-        {sol_hours.map(soul => (
-          <p key={soul}>{soul}</p>
-        ))}
-     </div>
     
-    </>
+  <center>
+    <h2>Mars weather</h2>
+          <div className="Row">
+            <h4 >ATMOSPHERIC TEMPERATURE</h4>
+            {sol_hours.map(soul => (
+              <p key={soul}>{soul}</p>
+            ))}
+          </div>
+
+          <div className="Row">
+          <h4>HORIZONTAL WIND PRESSURE</h4>
+            {sol_hours.map(soul => (
+              <p key={soul}>{soul}</p>
+            ))}
+          </div>
+
+          <div className="Row">
+        <h4>ATMOSPHERIC PRESSURE</h4>
+            {sol_hours.map(soul => (
+              <p key={soul}>{soul}</p>
+            ))}
+          </div>
+
+          <div className="Row">
+        <h4>WIND DIRECTION</h4>
+            {sol_hours.map(soul => (
+              <p key={soul}>{soul}</p>
+            ))}
+           </div>
+    
+  </center>
   );
 }
 
