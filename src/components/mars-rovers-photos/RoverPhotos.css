@@ -81,7 +81,10 @@ input[type="date"]::-webkit-inner-spin-button,::-webkit-calendar-picker-indicato
 }
 
 input[type=submit] {
-    display: none;
+    background: #9a00ff;
+    border: none;
+    color: #fff;
+    margin-left: 5px;
 }
 
 .photo-list {
@@ -89,7 +92,14 @@ input[type=submit] {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
+    padding-bottom: 30px;
+}
+.photo-item {
+    background: #2F3241;
+    padding: 10px;
+    border-radius: 5px;
 }
 .photo-item img{
-    width: 308px;
+    width: 288px;
 }
+
