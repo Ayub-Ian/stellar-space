@@ -18,7 +18,7 @@ function Header() {
               <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <a href="/">Mars Weather</a>
+            <NavLink to="/mars-weather">Mars Weather</NavLink>
             </li>
             <li>
               <NavLink to="/map">Asteroids Map</NavLink>

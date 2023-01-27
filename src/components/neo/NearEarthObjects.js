@@ -26,9 +26,9 @@ function NearEarthObjects() {
     <div className="neo">
       <div className="neo-wrapper container">
         <h3>NEAR EARTH OBJECTS</h3>
-        <div className="filters">
+        {/* <div className="filters">
           <NeoSearch handleSearch={handleSearch} />
-        </div>
+        </div> */}
 
         {(!objects) ? <p>no data found</p> : <NeoList objects={objects} />}
     
