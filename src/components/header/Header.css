@@ -8,6 +8,7 @@
     height: 56px;
     position: fixed;
     z-index: 1000;
+    width: 100%;
 }
 .header ul {
     padding: 0;
