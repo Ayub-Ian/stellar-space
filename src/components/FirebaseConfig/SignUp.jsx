@@ -20,7 +20,7 @@ const SignUp = () => {
         <>
            <div className="parent">
             <div className="container1">
-                <h2>SIGN IN</h2>
+                <h2>SIGN UP</h2>
                   <form onSubmit={(e)=>{
                     e.preventDefault()
 
