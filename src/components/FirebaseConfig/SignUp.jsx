@@ -37,7 +37,7 @@ const SignUp = () => {
                       alert(err)
                     }
                   }else{
-                    alert('Passwords Mismatch')
+                    alert('Passwords Mismatch.Please input the same password.')
                   }  
                   }}>
                     <div style={{display:'flex'}} ><p>UserName*</p></div> 
