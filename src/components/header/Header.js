@@ -1,8 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
-
+import AuthContext from "../contexts/AuthContext";
+import { useContext } from "react";
 function Header() {
+  const {signOut,currentUser} = useContext(AuthContext)
   return (
     <nav>
       <div className="container">
@@ -15,7 +17,7 @@ function Header() {
           </div>
           <ul>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/homepage">Home</NavLink>
             </li>
             <li>
             <NavLink to="/mars-weather">Mars Weather</NavLink>
@@ -29,6 +31,7 @@ function Header() {
             <li>
             <NavLink to="/near-earth-objects">NEO</NavLink>
             </li>
+            <button onClick={signOut} style={{display: currentUser ? 'block': 'none'}}>signout</button>
           </ul>
         </div>
       </div>
